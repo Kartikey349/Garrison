@@ -7,7 +7,7 @@ function App() {
   const isOwnerPath = useLocation().pathname.includes("owner")
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       {!isOwnerPath && <Navbar />}
       <div className="min-h-[70vh]">
         <Routes>
