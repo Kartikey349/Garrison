@@ -7,7 +7,7 @@ const Testimonials = () => {
     <div className='flex flex-col items-center px-6 md-px-16 lg:px-24 bg-slate-50 pt-20 pb-30'>
         <Title title="What Our Guests Say" subTitle="Join our newsletter and be the first to discover new destinations, exclusive offers, and travel inspiration." />
 
-        <div className="flex flex-wrap items-center gap-6 mt-20">
+        <div className="flex flex-wrap items-center gap-6 mt-20 justify-center">
                 {testimonials.map((testimonial) => (
                     <div key={testimonial.id} className="bg-white p-6 rounded-xl shadow">
                         <div className="flex items-center gap-3">
