@@ -1,6 +1,7 @@
 import { Route, Routes, useLocation } from "react-router-dom"
 import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
         </Routes>
     </div>
+    <Footer />
   </div>
 }
 
