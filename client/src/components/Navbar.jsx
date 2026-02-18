@@ -98,12 +98,12 @@ const Navbar = () => {
                     </button>
 
                     {navLinks.map((link, i) => (
-                        <Link key={i} to={link.path} onClick={() => setIsMenuOpen(false)}>
+                        <Link key={i} to={link.path} onClick={() =>{ setIsMenuOpen(false), scrollTo(0,0)}}>
                             {link.name}
                         </Link>
                     ))}
 
-                   {user && <button className="border px-4 py-1 text-sm font-light rounded-full cursor-pointer transition-all" onClick={() => navigate("/owner")}>
+                   {user && <button className="border px-4 py-1 text-sm font-light rounded-full cursor-pointer transition-all" onClick={() => {navigate("/owner")}}>
                         Dashboard
                     </button>}
 
